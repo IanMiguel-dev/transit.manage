@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitManage - Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Track&Go</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+            <h2>Agendar Transporte</h2>
+            <form id="agendamentoForm">
+                <input type="datetime-local" id="dataHora" required>
+                <input type="text" id="paciente" placeholder="Nome" required>
+                <input type="text" id="embarque" placeholder="Local de Embarque" required>
+                <input type="text" id="desembarque" placeholder="Local de Desembarque" required>
+                <input type="text" id="motorista" placeholder="Motorista" required>
+                <input type="text" id="carro" placeholder="Carro Utilizado" required>
+                <textarea id="observacoes" placeholder="Observações"></textarea>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+        <section class="agendamentos-section">
+            <h2>Agendamentos</h2>
+            <input type="text" id="searchInput" placeholder="Buscar agendamentos...">
+            <div id="agendamentos"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
